@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.izquierda {
+    display: flex;
+    background-color: #141827;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.elemento {
+    background-color: #fff;
+    width: 2rem;
+    height: 2rem;
+    border: solid 1px #c1d9d0;
+    font-size: small;
+}
+
+.derecha {
+    flex-grow: 9;
+    background-color: #62455b;
+    height: 100vh;
+}
+
+@media (max-width:640px) {
+
+    body {
+        flex-direction: column-reverse;
+    }
+
+    .izquierda {
+        flex-direction: row;
+        height: 10vh;
+    }
+
+    .derecha {
+        height: 90vh;
+    }
+}
